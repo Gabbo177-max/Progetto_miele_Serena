@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti e Ordini | La Bottega delle Api</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/contatti.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <div class="logo">
+                <a href="index.html">La Bottega delle Api</a>
+            </div>
+            
+            <!-- 🍔 Bottone Hamburger (visibile solo su mobile) -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            
+            <!-- Link del menu -->
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">Chi Siamo</a></li>
+                    <li><a href="carrello.html">🛒 (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contatti.html" class="btn btn-primary">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intestazione di Pagina -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Parla con Noi</h1>
+                <p>Siamo a tua disposizione per informazioni e per preparare il tuo ordine.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container contact-grid">
+                
+                <!-- Colonna Sinistra: Informazioni Classiche -->
+                <div class="contact-info">
+                    <h2>I nostri recapiti</h2>
+                    <p>Vieni a trovarci in azienda per scoprire dove lavorano le nostre api, oppure scrivici per qualsiasi curiosità sul nostro miele.</p>
+                    
+                    <ul class="info-list">
+                        <li>
+                            <strong>📍 Dove siamo:</strong><br>
+                            Via dei Fiori, 42<br>
+                            42121 Reggio Emilia (RE)
+                        </li>
+                        <li>
+                            <strong>📞 Telefono:</strong><br>
+                            +39 333 1234567
+                        </li>
+                        <li>
+                            <strong>✉️ Email:</strong><br>
+                            ciao@labottegadelleapi.it
+                        </li>
+                        <li>
+                            <strong>🕰️ Orari:</strong><br>
+                            Lunedì - Venerdì: 09:00 - 18:00<br>
+                            Sabato: Su appuntamento
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonna Destra: Riquadro Ordini WhatsApp -->
+                <div class="whatsapp-box">
+                    <h3>Come Ordinare</h3>
+                    <p>Da oggi ordinare è facilissimo! Aggiungi i prodotti che preferisci al <strong>Carrello</strong> e clicca su Invia Ordine.</p>
+                    <p>Hai richieste particolari, vuoi un cesto regalo personalizzato o preferisci fare alla vecchia maniera? Scrivici direttamente un messaggio!</p>
+                    
+                    <!-- Sostituisci il numero 393331234567 con quello VERO della tua amica -->
+                    <a href="https://wa.me/393517226322?text=Ciao!%20Vorrei%20avere%20informazioni%20sui%20vostri%20prodotti." target="_blank" class="btn btn-whatsapp" style="margin-top: 20px;">
+                        💬 Scrivici su WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section brand">
+                <h3>La Bottega delle Api</h3>
+                <p>Miele artigianale prodotto con passione, cura e totale rispetto per l'ambiente e le nostre preziose api.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">La Nostra Storia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contatti</h4>
+                <ul>
+                    <li>📍 Via dei Fiori, 42 - Natura (IT)</li>
+                    <li>📞 +39 333 1234567</li>
+                    <li>✉️ ciao@labottegadelleapi.it</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 La Bottega delle Api. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

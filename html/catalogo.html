@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Catalogo | La Bottega delle Api</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/catalogo.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <div class="logo"><a href="index.html">La Bottega delle Api</a></div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html" class="active">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">Chi Siamo</a></li>
+                    <li><a href="carrello.html">🛒 (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contatti.html" class="btn btn-primary">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Il Nostro Catalogo</h1>
+                <p>Mieli crudi, non pastorizzati e ricchi di proprietà benefiche.</p>
+            </div>
+        </section>
+
+        <section class="catalog-section section-padding">
+            <div class="container">
+                <div class="products-grid">
+                    
+                    <!-- Prodotto 1 -->
+                    <article class="product-card">
+                        <img src="" alt="Miele di Acacia" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Miele di Acacia</h3>
+                            <p>Delicato, dolce e dal colore chiaro. Perfetto per dolcificare tisane e yogurt senza alterarne il sapore.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 8,00</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Miele di Acacia" data-price="8.00">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Prodotto 2 -->
+                    <article class="product-card">
+                        <img src="" alt="Miele Millefiori" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Miele Millefiori</h3>
+                            <p>Un concentrato di fiori primaverili. Ricco di sfumature, ideale per la colazione e spalmato sul pane.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 7,00</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Miele Millefiori" data-price="7.00">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Prodotto 3 -->
+                    <article class="product-card">
+                        <img src="" alt="Miele di Castagno" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Miele di Castagno</h3>
+                            <p>Colore ambrato scuro e sapore deciso, leggermente amarognolo. Fantastico in abbinamento ai formaggi stagionati.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 9,00</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Miele di Castagno" data-price="9.00">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Prodotto 4 -->
+                    <article class="product-card">
+                        <img src="" alt="Miele di Tiglio" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Miele di Tiglio</h3>
+                            <p>Profumo mentolato e sapore fresco. Noto per le sue proprietà calmanti, ottimo prima di andare a dormire.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 8,50</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Miele di Tiglio" data-price="8.50">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Prodotto 5 -->
+                    <article class="product-card">
+                        <img src="" alt="Miele di Eucalipto" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Miele di Eucalipto</h3>
+                            <p>Aroma balsamico e consistenza compatta. L'alleato perfetto contro i malanni di stagione e i mal di gola.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 8,00</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Miele di Eucalipto" data-price="8.00">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Prodotto 6 -->
+                    <article class="product-card">
+                        <img src="" alt="Polline di Fiori" class="product-img" style="background-color: #e9e9e9;">
+                        <div class="product-info">
+                            <h3>Polline di Fiori</h3>
+                            <p>Un superfood naturale ricco di proteine e vitamine. Da sciogliere in succhi di frutta o consumare al cucchiaio.</p>
+                            <div class="product-footer">
+                                <span class="price">€ 12,00</span>
+                                <button class="btn btn-primary add-to-cart" data-name="Polline di Fiori" data-price="12.00">Aggiungi</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section brand">
+                <h3>La Bottega delle Api</h3>
+                <p>Miele artigianale prodotto con passione, cura e totale rispetto per l'ambiente.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">La Nostra Storia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contatti</h4>
+                <ul>
+                    <li>📍 Via dei Fiori, 42 - Natura (IT)</li>
+                    <li>📞 +39 351 722 6322</li>
+                    <li>✉️ ciao@labottegadelleapi.it</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 La Bottega delle Api. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

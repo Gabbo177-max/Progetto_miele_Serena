@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #DCA931;       
+    --color-primary-dark: #B87311;  
+    --color-secondary: #2E4C34;     
+    --color-background: #FDFBF7;    
+    --color-text-dark: #2C2C2C;     
+    --color-text-light: #FFFFFF;    
+
+    --font-heading: 'Playfair Display', serif; 
+    --font-body: 'Poppins', sans-serif;        
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --spacing-xxl: 96px;
+
+    --border-radius: 8px;           
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); 
+}

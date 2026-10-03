@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il tuo Carrello | La Bottega delle Api</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <div class="logo">
+                <a href="index.html">La Bottega delle Api</a>
+            </div>
+            
+            <!-- 🍔 Bottone Hamburger (visibile solo su mobile) -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            
+            <!-- Link del menu -->
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">Chi Siamo</a></li>
+                    <li><a href="carrello.html">🛒 (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contatti.html" class="btn btn-primary">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px; background: white; padding: 40px; border-radius: 8px; box-shadow: var(--box-shadow);">
+                <h1 style="font-family: var(--font-heading); color: var(--color-primary-dark); margin-bottom: 30px;">Il tuo Carrello</h1>
+                
+                <!-- Qui JavaScript inserirà i prodotti -->
+                <div id="cart-items"></div>
+                
+                <!-- Qui JavaScript inserirà il totale -->
+                <div id="cart-total"></div>
+                
+                <div style="margin-top: 30px; text-align: right;">
+                    <a href="catalogo.html" class="btn btn-outline" style="color: var(--color-text-dark); border-color: var(--color-text-dark); margin-right: 15px;">Continua gli acquisti</a>
+                    <!-- Questo bottone sarà gestito dal JS -->
+                    <a href="#" id="checkout-whatsapp" class="btn" style="background-color: #25D366; color: white; border: none;">💬 Invia Ordine su WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

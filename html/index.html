@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bottega delle Api | Il Miele Artigianale</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/home.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <div class="logo"><a href="index.html">La Bottega delle Api</a></div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">Chi Siamo</a></li>
+                    <li><a href="carrello.html">🛒 (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contatti.html" class="btn btn-primary">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div> 
+            <div class="container hero-content">
+                <h1>Il vero sapore della natura,<br>direttamente dall'alveare.</h1>
+                <p>Miele 100% artigianale, estratto a freddo con amore e totale rispetto per le nostre api.</p>
+                <div class="hero-buttons">
+                    <a href="catalogo.html" class="btn btn-primary">Scopri il Catalogo</a>
+                    <a href="la-nostra-storia.html" class="btn btn-outline">La nostra etica</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured-products section-padding">
+            <div class="container">
+                <h2 class="section-title" id="featured-title">I Tuoi Preferiti</h2>
+                
+                <div class="products-grid" id="featured-products-container">
+                    <!-- JavaScript popolerà questa sezione dinamicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section brand">
+                <h3>La Bottega delle Api</h3>
+                <p>Miele artigianale prodotto con passione, cura e totale rispetto per l'ambiente.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">I Nostri Mieli</a></li>
+                    <li><a href="la-nostra-storia.html">La Nostra Storia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contatti</h4>
+                <ul>
+                    <li>📍 Via dei Fiori, 42 - Natura (IT)</li>
+                    <li>📞 +39 351 722 6322</li>
+                    <li>✉️ ciao@labottegadelleapi.it</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 La Bottega delle Api. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

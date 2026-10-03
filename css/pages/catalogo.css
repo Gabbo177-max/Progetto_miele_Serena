@@ -1,0 +1,31 @@
+/* Intestazione della Pagina Catalogo */
+.page-header {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: var(--spacing-xxl) 0;
+    
+    /* 📸 IMMAGINE DI SFONDO INTESTAZIONE CATALOGO
+       Quando hai la foto, togli i commenti alla riga qui sotto. 
+       Il linear-gradient serve per mantenere il testo bianco leggibile! */
+       
+    background-image: linear-gradient(rgba(44, 44, 44, 0.7), rgba(44, 44, 44, 0.7)), url('../../assets/img/TUA_FOTO_CATALOGO.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.catalog-section {
+    background-color: var(--color-background);
+}

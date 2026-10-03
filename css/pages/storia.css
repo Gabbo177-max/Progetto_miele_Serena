@@ -1,0 +1,74 @@
+/* Intestazione della Pagina Chi Siamo */
+.about-hero {
+    background-color: var(--color-secondary); /* Usa il verde scuro del brand */
+    color: var(--color-text-light);
+    text-align: center;
+    padding: var(--spacing-xxl) 0;
+}
+
+.about-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Griglia per affiancare Testo e Immagine */
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide lo spazio in due colonne uguali */
+    gap: var(--spacing-xl);
+    align-items: center; /* Centra verticalmente testo e immagine */
+}
+
+/* Stili per il testo */
+.story-text h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary-dark);
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.story-text h3 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.story-text p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+    color: #444; /* Grigio leggermente più morbido per favorire la lettura */
+}
+
+/* Stili per l'immagine */
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    /* Leggera rotazione per dare un tocco più artigianale e dinamico */
+    transform: rotate(2deg); 
+    transition: transform 0.3s ease;
+}
+
+.story-image img:hover {
+    transform: rotate(0deg); /* Si raddrizza quando ci passi sopra col mouse */
+}
+
+/* Adattamento per i cellulari (Responsive Design) */
+@media (max-width: 768px) {
+    .story-grid {
+        grid-template-columns: 1fr; /* Su schermi piccoli, il testo va sopra e l'immagine sotto */
+    }
+    
+    .story-image img {
+        transform: rotate(0deg); /* Toglie la rotazione sui cellulari per risparmiare spazio */
+    }
+}
